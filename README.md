@@ -42,15 +42,15 @@ The t-tests performed here are two-tailed, as we want to know if the PSI value i
 ### Test Scenario 1: All lots together
 We know from the indexPlot above that it is likely that PSI values are not normally distributed. The histogram below confirms this.
 
-![histogram](link)
+![histogram](https://github.com/SG314159/MechaCar_Statistical_Analysis/blob/main/images/histogram.png)
 
 The QQ Plot also shows that the distribution has a heavy number of values in the middle and not as many values in the tails. 
 
-![qqplot](link)
+![qqplot](https://github.com/SG314159/MechaCar_Statistical_Analysis/blob/main/images/qqplot.png)
 
 Therefore, the data does not seem to meet the assumptions for the t-test, but we are instructed to run it anyways. The result from the t-test are shown.
 
-![OverallTtest](link)
+![OverallTtest](https://github.com/SG314159/MechaCar_Statistical_Analysis/blob/main/images/OverallTtest.PNG)
 
 The p-value is greater than 0.05, so there is not sufficient evidence to reject the null hypothesis that the overall mean is different from 1500.
 
@@ -61,17 +61,17 @@ In this scenario, the observations are separated into the Lots and a t-test is p
 *Lot 1*
 A histogram (not shown) of the data shows that the distribution somewhat resembles a normal distribution. The t-test results have a p-value of 1, so there is no evidence to reject the null hypothesis that the mean is 1500.
 
-![lot1ttest](link)
+![lot1ttest](https://github.com/SG314159/MechaCar_Statistical_Analysis/blob/main/images/lot1ttest.png)
 
 *Lot 2*
 A histogram (not shown) of the data shows that the distribution resembles a normal distribution (more so than Lot 1). The t-test results have a p-value of 0.6072, so there is no evidence to reject the null hypothesis that the mean is 1500.
 
-![lot2ttest](link)
+![lot2ttest](https://github.com/SG314159/MechaCar_Statistical_Analysis/blob/main/images/lot2ttest.png)
 
 *Lot 3*
 The data distribution (histogram not shown here) somewhat resembles a normal distribution. The t-test results have a p-value of 0.04, so there is sufficient evidence to reject the null hypothesis. The mean of this group, 1496.14 is statistically significant from 1500 at the 0.05 level.
 
-![lot3ttest](link)
+![lot3ttest](https://github.com/SG314159/MechaCar_Statistical_Analysis/blob/main/images/lot3ttest.png)
 
 
 
