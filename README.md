@@ -36,6 +36,43 @@ The variation values when grouped by lot show that the suspension coils in Lot 3
 
 
 # Deliverable 3:
+## T-Tests on Suspension Coils
+The t-tests performed here are two-tailed, as we want to know if the PSI value is statistically different from 1500 and not just if it is higher or lower. The Module 15 Challenge directions did not specify an alpha threshold, so we will use the value of 0.05 to decide if our results are statistically significant.
+
+### Test Scenario 1: All lots together
+We know from the indexPlot above that it is likely that PSI values are not normally distributed. The histogram below confirms this.
+
+insert histogram here
+
+The QQ Plot also shows that the distribution has a heavy number of values in the middle and not as many values in the tails. 
+
+insert qqplot
+
+Therefore, the data does not seem to meet the assumptions for the t-test, but we are instructed to run it anyways. The result from the t-test are shown.
+
+insert overall t-test
+
+The p-value is greater than 0.05, so there is not sufficient evidence to reject the null hypothesis that the overall mean is different from 1500.
+
+
+### Test Scenario 2:
+In this scenario, the observations are separated into the Lots and a t-test is performed on each lot separately.
+
+*Lot 1*
+A histogram (not shown) of the data shows that the distribution somewhat resembles a normal distribution. The t-test results have a p-value of 1, so there is no evidence to reject the null hypothesis that the mean is 1500.
+
+insert lot1 t-test
+
+*Lot 2*
+A histogram (not shown) of the data shows that the distribution resembles a normal distribution (more so than Lot 1). The t-test results have a p-value of 0.6072, so there is no evidence to reject the null hypothesis that the mean is 1500.
+
+insert lot2 t-test
+
+*Lot 3*
+The data distribution somewhat resembles a normal distribution. The t-test results have a p-value of 0.04, so there is sufficient evidence to reject the null hypothesis. The mean of this group, 1496.14 is statistically significant from 1500 at the 0.05 level.
+
+insert lot3 t-test
+
 
 
 # Deliverable 4:

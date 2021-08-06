@@ -25,3 +25,18 @@ lot_summary
 
 boxplot(PSI~Manufacturing_Lot, data=coils)
 plot(coils$PSI)
+
+
+
+#----------------- Deliverable 3
+# t.test(xvector, mu = 1500)
+#t.test(sample_table$Miles_Driven,mu=mean(population_table$Miles_Driven))
+# Compare all lots together to population mean of 1500
+hist(coils$PSI)
+qqnorm(coils$PSI)
+qqline(coils$PSI)
+t.test(coils$PSI, mu=1500)
+
+# Create separated datasets for separated t-tests
+lot1 <- filter(coils, Manufacturing_Lot=="Lot1")
+
