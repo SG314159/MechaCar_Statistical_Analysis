@@ -38,5 +38,25 @@ qqline(coils$PSI)
 t.test(coils$PSI, mu=1500)
 
 # Create separated datasets for separated t-tests
+# Lot 1
 lot1 <- filter(coils, Manufacturing_Lot=="Lot1")
+hist(lot1$PSI)
+t.test(lot1$PSI, mu=1500)
+
+# Lot 2
+lot2 <- filter(coils, Manufacturing_Lot=="Lot2")
+hist(lot2$PSI)
+t.test(lot2$PSI, mu=1500)
+
+# Lot 3
+lot3 <- filter(coils, Manufacturing_Lot=="Lot3")
+hist(lot3$PSI)
+t.test(lot3$PSI, mu=1500)
+
+
+
+
+
+
+
 
