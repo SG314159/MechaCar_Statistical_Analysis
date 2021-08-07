@@ -76,5 +76,18 @@ The data distribution (histogram not shown here) somewhat resembles a normal dis
 
 
 # Deliverable 4:
+## Study Design: MechaCar vs Competition
+Goal: describe a statistical comparison between MechaCar and a competitor
 
+- What metric or metrics are you going to test?
+We are going to compare fuel efficiency by comparing the highway mpg for MechaCars versus Competitor Brand X.
+
+- What is the null hypothesis or alternative hypothesis?
+Our belief is that MechaCar has higher highway mpg due to some new engineering that has improved our car engines. The null hypothesis is that there is no difference in the highway mpg of MechaCar and Competitor Brand X. The alternative hypothesis is one-tailed, as we will test that MechaCar - Competitor Brand X > 0. This is equivalent to testing that MechaCar highway mpg > Competitor Brand X mpg. We will use an alpha value of 0.05.
+
+- What statistical test would you use to test the hypothesis? And why?
+Based on past data samples of MechaCar highway mpg and Competitor Branc X mpg, we believe both distributions are approximately normal. Since we are comparing the mean of the MechaCar samples with the mean of the Competitor Brand X samples, we can use a two-sample t-test, one-tailed.
+
+- What data is needed to run the statistical test?
+We need two samples, one of MechaCars and the other of Competitor Brand X cars. Our sample size will be 75 cars for each. The cars in the samples are of the same class (sedan), have approximately the same age and mileage (all are less than 3 years old and have less than 35,000 miles), and have the same number of cylinders (4 cylinders). The mean weight for each group is 2000 pounds, and the distribution of the weights of the cars in the sample has a standard deviation of less than 50 pounds. In other words, 99.7% of the cars in both samples will have a weight between 1850 and 2150 pounds. From cars with these characteristics, we randomly chose 75 cars for this study. The cars in this study will be driven in approximately equivalent highway conditions for 200 miles, and the miles per gallon will be calculated for each car.  
 

@@ -53,6 +53,29 @@ lot3 <- filter(coils, Manufacturing_Lot=="Lot3")
 hist(lot3$PSI)
 t.test(lot3$PSI, mu=1500)
 
+#------------------- Deliverable 4
+# No code.
+# See README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
